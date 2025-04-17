@@ -1,7 +1,9 @@
 import type { Metadata } from 'next';
 import { inter, orbitron } from './ui/fonts';
-import './globals.css';
-import './reset.css';
+import './ui/global.css';
+import './ui/reset.css';
+
+export const experimental_ppr = true;
 
 export const metadata: Metadata = {
   title: 'Habitize – Gamify Your Growth',

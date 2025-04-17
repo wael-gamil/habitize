@@ -1,0 +1,94 @@
+:root {
+  --background: #0e0e0e;
+  --foreground: #ffffff;
+  --grey: #777777;
+  --primary: #f39d0b;
+  --secondary: #451a03;
+  --secondary-dark: #160800;
+  --gap-small: 0.5rem;
+  --gap-medium: 1rem;
+  --gap-large: 2rem;
+  --font-size-small: 0.8rem;
+  --font-size-medium: 1rem;
+  --font-size-large: 1.2rem;
+  --font-size-xlarge: 1.5rem;
+  --font-size-xxlarge: 2rem;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  height: 100vh;
+  width: 100vw;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: var(--foreground);
+  text-decoration: underline;
+  text-decoration-color: var(--primary);
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: #ffffff;
+    --foreground: #171717;
+  }
+}
+
+@media screen and (max-width: 2560px) {
+  :root {
+    /* make it bigger */
+    --font-size-small: 1rem;
+    --font-size-medium: 1.2rem;
+    --font-size-large: 1.4rem;
+    --font-size-xlarge: 1.8rem;
+    --font-size-xxlarge: 2.5rem;
+  }
+  body {
+    font-size: var(--font-size-xlarge);
+  }
+}
+
+@media screen and (max-width: 1920px) {
+  :root {
+    --font-size-small: 0.8rem;
+    --font-size-medium: 1rem;
+    --font-size-large: 1.2rem;
+    --font-size-xlarge: 1.5rem;
+    --font-size-xxlarge: 2rem;
+  }
+  body {
+    font-size: var(--font-size-large);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  :root {
+    --font-size-small: 0.7rem;
+    --font-size-medium: 0.9rem;
+    --font-size-large: 1.1rem;
+    --font-size-xlarge: 1.4rem;
+    --font-size-xxlarge: 1.8rem;
+  }
+  body {
+    font-size: var(--font-size-medium);
+  }
+}
+
+@media screen and (max-width: 890px) {
+  :root {
+    --font-size-small: 0.6rem;
+    --font-size-medium: 0.8rem;
+    --font-size-large: 1rem;
+    --font-size-xlarge: 1.2rem;
+    --font-size-xxlarge: 1.5rem;
+  }
+  body {
+    font-size: var(--font-size-small);
+  }
+}
