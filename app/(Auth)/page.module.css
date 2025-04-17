@@ -1,0 +1,34 @@
+.title {
+  color: var(--primary);
+  font-size: var(--font-size-xxlarge);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100%;
+  width: clamp(300px, 30%, 50%);
+  gap: var(--gap-large);
+  padding: var(--gap-large);
+}
+
+.registerLink {
+  color: var(--grey);
+  font-size: var(--font-size-small);
+}
+
+.footer {
+  color: var(--grey);
+  font-weight: 700;
+  margin-top: auto;
+}
+.footer span {
+  color: var(--primary);
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
