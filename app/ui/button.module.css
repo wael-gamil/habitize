@@ -1,0 +1,38 @@
+.button {
+  background-color: var(--primary);
+  color: var(--secondary-dark);
+  box-sizing: border-box;
+  border: 1px solid var(--primary);
+  padding: var(--gap-small) var(--gap-medium);
+  border-radius: 0.2rem;
+  cursor: pointer;
+  font-size: var(--font-size-medium);
+  transition: background-color 0.3s ease;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-small);
+}
+.button:hover {
+  background-color: var(--secondary);
+  color: var(--foreground);
+  border: 1px solid var(--primary);
+  box-shadow: 0 4px 8px rgba(243, 157, 11, 0.2);
+}
+
+.reverseColor {
+  background-color: var(--secondary-dark);
+  color: var(--grey);
+}
+.reverseColor:hover {
+  background-color: var(--primary);
+  color: var(--foreground);
+  border: 1px solid var(--primary);
+  box-shadow: 0 4px 8px rgba(243, 157, 11, 0.2);
+}
+
+.reverseColor:hover img {
+  filter: brightness(0) invert(1);
+  opacity: 0.8;
+}
